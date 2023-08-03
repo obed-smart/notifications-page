@@ -1,0 +1,68 @@
+@import "mixins";
+@import "color";
+
+@font-face {
+    font-family: myfont;
+    src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myfont;
+}
+
+.contanier {
+    @include container;
+
+    .main {
+        width: 34rem;
+        height: 37rem;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: $White;
+        margin-bottom: 20px;
+        position: relative;
+        user-select: none;
+
+        header {
+            @include header;
+
+
+        }
+
+        .unread{
+           @include unread;
+        }
+
+        section {
+            @include section;
+
+
+            &:nth-of-type(5) {
+                display: flex;
+                justify-content:flex-end;
+
+                p {
+                    font-size: 12px;
+                    padding: 13px;
+                    font-weight: 500;
+                    color: $Dark-grayish-blue;
+                    border: 1px solid $Light-grayish-blue-2;
+                    border-radius: 5px;
+                    width: 36em;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $Light-grayish-blue-1;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+}

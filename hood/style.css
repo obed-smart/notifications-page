@@ -1,0 +1,146 @@
+@font-face {
+  font-family: myfont;
+  src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: myfont;
+  src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: myfont;
+}
+
+.contanier {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(210, 60%, 98%);
+  font-family: myfont;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.contanier .main {
+  width: 34rem;
+  height: 37rem;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  margin-bottom: 20px;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.contanier .main header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.contanier .main header .side {
+  display: inherit;
+  align-items: center;
+}
+.contanier .main header .side h2 {
+  margin-right: 10px;
+  font-size: 20px;
+  color: hsl(224, 21%, 14%);
+}
+.contanier .main header .side .Notification {
+  width: 25px;
+  height: 20px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  background: hsl(219, 85%, 26%);
+  border-radius: 5PX;
+}
+.contanier .main header p {
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(219, 12%, 42%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contanier .main header p:hover {
+  color: hsl(219, 85%, 26%);
+}
+.contanier .main .unread {
+  background-color: hsl(210, 60%, 98%);
+}
+.contanier .main .unread div p:first-child::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: hsl(1, 90%, 64%);
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.contanier .main section {
+  display: flex;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.contanier .main section img {
+  width: 30px;
+  height: 30px;
+}
+.contanier .main section div {
+  margin-left: 10px;
+}
+.contanier .main section div p {
+  font-size: 12px;
+  font-weight: 500;
+  color: hsl(219, 12%, 42%);
+}
+.contanier .main section div p b {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+.contanier .main section div p strong {
+  color: hsl(224, 21%, 14%);
+  cursor: pointer;
+}
+.contanier .main section div p strong:hover {
+  color: hsl(219, 85%, 26%);
+}
+.contanier .main section div p span {
+  color: hsl(219, 12%, 42%);
+  cursor: pointer;
+}
+.contanier .main section div p span:hover {
+  color: hsl(219, 85%, 26%);
+}
+.contanier .main section div p:last-of-type {
+  color: hsl(219, 12%, 42%);
+  font-size: 12px;
+  margin-top: 2px;
+  font-weight: 500;
+}
+.contanier .main section:nth-of-type(5) {
+  display: flex;
+  justify-content: flex-end;
+}
+.contanier .main section:nth-of-type(5) p {
+  font-size: 12px;
+  padding: 13px;
+  font-weight: 500;
+  color: hsl(219, 12%, 42%);
+  border: 1px solid hsl(205, 33%, 90%);
+  border-radius: 5px;
+  width: 36em;
+  cursor: pointer;
+}
+.contanier .main section:nth-of-type(5) p:hover {
+  background-color: hsl(211, 68%, 94%);
+}/*# sourceMappingURL=style.css.map */

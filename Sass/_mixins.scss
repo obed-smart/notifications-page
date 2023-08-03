@@ -1,0 +1,139 @@
+@import "color";
+
+@font-face {
+    font-family: myfont;
+    src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+@mixin container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $Very-light-grayish-blue;
+    font-family: myfont;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+@mixin header() {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+
+    .side {
+        display: inherit;
+        align-items: center;
+
+        h2 {
+            margin-right: 10px;
+            font-size: 20px;
+            color: $Very-dark-blue;
+        }
+
+        .Notification{
+            width: 25px;
+            height: 20px;
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $White;
+            background: $Blue;
+            border-radius: 5PX;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 500;
+        color: $Dark-grayish-blue;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            color: $Blue;
+        }
+    }
+}
+
+// this is for the unread section
+
+@mixin unread {
+    background-color: $Very-light-grayish-blue;
+
+    div {
+
+        p {
+
+
+            &:first-child::after {
+                content: "";
+                width: 8px;
+                height: 8px;
+                background-color: $Red;
+                display: inline-block;
+                border-radius: 50%;
+                margin-left: 5px;
+            }
+
+
+        }
+    }
+}
+
+// this is for all the section and it style
+@mixin section {
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+
+    div {
+        margin-left: 10px;
+
+        p {
+            font-size: 12px;
+            font-weight: 500;
+            color: $Dark-grayish-blue;
+            
+            b{
+                color: $Blue ;
+                cursor: pointer;
+            }
+
+            strong {
+                color: $Very-dark-blue;
+                cursor: pointer;
+
+                &:hover {
+                    color: $Blue;
+                }
+            }
+
+            span{
+                color: $Dark-grayish-blue;
+                cursor: pointer;
+
+                &:hover {
+                    color: $Blue;
+                }
+            }
+
+            &:last-of-type {
+                color: $Dark-grayish-blue;
+                font-size: 12px;
+                margin-top: 2px;
+                font-weight: 500;
+            }
+        }
+    }
+}
