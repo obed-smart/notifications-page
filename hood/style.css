@@ -25,7 +25,7 @@
 }
 .contanier .main {
   width: 34rem;
-  height: 37rem;
+  height: 36rem;
   margin-top: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -143,16 +143,24 @@
 .contanier .main section:nth-of-type(5) {
   display: flex;
   justify-content: right;
+  width: 28rem;
+  align-items: center;
+  margin-left: 50px;
+}
+@media (max-width: 768px) {
+  .contanier .main section:nth-of-type(5) {
+    width: 17em;
+    margin-left: 13px;
+  }
 }
 .contanier .main section:nth-of-type(5) p {
-  font-size: 12px;
+  font-size: 13px;
   padding: 13px;
   font-weight: 500;
   color: hsl(219, 12%, 42%);
   border: 1px solid hsl(205, 33%, 90%);
   border-radius: 5px;
   cursor: pointer;
-  width: 36em;
 }
 @media (max-width: 768px) {
   .contanier .main section:nth-of-type(5) p {
@@ -165,15 +173,14 @@
 }
 .contanier .main section:nth-of-type(6) {
   display: flex;
-  align-items: center;
 }
 .contanier .main section:nth-of-type(6) div {
   display: flex;
   flex-direction: column;
-  margin-right: 8rem;
+  margin-right: 9rem;
 }
 @media (max-width: 768px) {
   .contanier .main section:nth-of-type(6) div {
-    margin-right: 0.7rem;
+    margin-right: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
