@@ -1,21 +1,21 @@
 const notification = document.querySelector(".Notification");
+const markAll = document.getElementById("mark_all");
 const unreadmassage = document.querySelectorAll(".unread");
-const markALl = document.getElementById("mark_all");
 
-notification.innerHTML = unreadmassage.length;
+notification.innerHTML = unreadmassage.length
 
-unreadmassage.forEach((massage)=>{
-    massage.addEventListener("click",() => {
-massage.classList.remove("unread")
-const unreadmassage = document.querySelectorAll(".unread");
-notification.innerHTML = unreadmassage.length;
+unreadmassage.forEach((unread) => {
+    unread.addEventListener("click", () => {
+        unread.classList.remove("unread");
+        const unreadmassage = document.querySelectorAll(".unread");
+        notification.innerHTML = unreadmassage.length
     })
 })
 
-markALl.addEventListener("click", () => {
-    unreadmassage.forEach((massage) => {
-massage.classList.remove("unread");
-const unreadmassage = document.querySelectorAll(".unread");
-notification.innerHTML = unreadmassage.length;
+markAll.addEventListener("click", () => {
+    unreadmassage.forEach((unread) => {
+        unread.classList.remove("unread");
+        const unreadmassage = document.querySelectorAll(".unread");
+        notification.innerHTML = unreadmassage.length
     })
 })

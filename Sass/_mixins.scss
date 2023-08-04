@@ -1,4 +1,5 @@
 @import "color";
+@import "mobile";
 
 @font-face {
     font-family: myfont;
@@ -15,7 +16,7 @@
     position: absolute;
 }
 
-@mixin header() {
+@mixin header {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -27,10 +28,14 @@
         display: inherit;
         align-items: center;
 
+       
+
         h2 {
             margin-right: 10px;
             font-size: 20px;
             color: $Very-dark-blue;
+
+          
         }
 
         .Notification{
@@ -43,15 +48,21 @@
             color: $White;
             background: $Blue;
             border-radius: 5PX;
+
         }
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
         color: $Dark-grayish-blue;
         border-radius: 5px;
         cursor: pointer;
+
+        @media (max-width: 768px) {
+        font-size: 14px;
+
+        }
 
         &:hover {
             color: $Blue;

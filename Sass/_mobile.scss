@@ -1,0 +1,12 @@
+@mixin main-mobile {
+    width: 100%;
+    min-height: inherit;
+    margin: 0;
+
+
+}
+
+@mixin comment {
+    width: 17em;
+    margin-left: 30px;
+}
